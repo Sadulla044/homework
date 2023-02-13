@@ -1,0 +1,182 @@
+/**************
+** Core style **
+**************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/**********
+** Title **
+**********/
+.title-wrapper {
+    max-width: 900px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.title-wrapper .title {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+/***************
+** Main style **
+***************/
+.container {
+    max-width: 900px;
+    width: 900px;
+    height: auto;
+    margin: 80px auto;
+    margin-bottom: 50px !important;
+    border: 1px solid black;
+}
+
+.container .wrapper {
+    width: 100%;
+    height: 100%;
+    margin-left: 40px;
+    padding: 50px;
+}
+
+
+/***************
+** List style **
+***************/
+.wrapper .main-list > li {
+    list-style: upper-roman;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main-list .inner-list {
+    margin-left: 40px;
+}
+
+.main-list .inner-list__item {
+    list-style: upper-alpha;
+    font-weight: 500;
+}
+
+.main-list .inner-list__item:first-child {
+    margin-top: 5px;
+}
+
+.main-list .sub-list {
+    margin-left: 40px;
+}
+
+.main-list .sub-list > li {
+    list-style: decimal;
+    font-weight: 300;
+}
+
+.main-list .sub-list > li:first-child {
+    margin-top: 5px;
+}
+
+.main-list .sub-list > li:last-child {
+    margin-bottom: 5px;
+}
+
+
+/***************
+** Pagination **
+***************/
+.pagination {
+    position: relative;
+    max-width: 900px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.pagination .wrapper,
+.link {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.pagination .wrapper > a,
+.pagination .wrapper > div {
+    margin-right: 10px;
+}
+
+.pagination .wrapper:last-child {
+    margin-right: 0;
+}
+
+.pagination .page {
+    display: inline-block;
+}
+
+.pagination .page .page-title {
+    font-weight: 300;
+}
+
+.icon {
+    cursor: pointer;
+    width: 1.2rem;
+}
+
+
+/****************
+** Media quary **
+*****************/
+@media (max-width: 900px) {
+    .container,
+    .pagination,
+    .title-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 785px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    * {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .title-wrapper {
+        text-align: center;
+    }
+
+    .title-wrapper .title {
+        font-size: 28px !important;
+    }
+
+    h1 {
+        font-size: 24px !important;
+    }
+
+    .container {
+        margin: 0 auto;
+        border: none;
+    }
+
+    .pagination .wrapper {
+        padding: 20px 40px;
+    }
+}

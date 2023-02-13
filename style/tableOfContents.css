@@ -1,0 +1,181 @@
+/***************
+** Core style **
+***************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/**********
+** Title **
+**********/
+.title-wrapper {
+    max-width: 900px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.title-wrapper .title {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+/***************
+** Main style **
+***************/
+.container {
+    max-width: 900px;
+    width: 900px;
+    height: auto;
+    margin: 80px auto;
+    margin-bottom: 50px !important;
+    border: 1px solid black;
+}
+
+.container .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 50px 10px 100px;
+}
+
+
+/**********************
+** Main Contant syle **
+**********************/
+.main-list > li {
+    list-style: decimal;
+    font-weight: 600;
+}
+
+.list-item > ol {
+    margin: 10px 0 15px 40px;
+}
+
+.inner-list > li {
+    list-style: upper-roman;
+}
+
+.sub-list > li {
+    list-style: lower-roman;
+    font-weight: 500;
+    margin: 10px 0 15px 40px;
+}
+
+.inner-sub-list > li {
+    list-style: circle;
+    margin: 10px 0 15px 40px;
+}
+
+
+/***************
+** Pagination **
+***************/
+.pagination {
+    position: relative;
+    max-width: 900px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.pagination .wrapper,
+.link {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.pagination .wrapper > a,
+.pagination .wrapper > div {
+    margin-right: 10px;
+}
+
+.pagination .wrapper:last-child {
+    margin-right: 0;
+}
+
+.pagination .page {
+    display: inline-block;
+}
+
+.pagination .page .page-title {
+    font-weight: 300;
+}
+
+.icon {
+    cursor: pointer;
+    width: 1.2rem;
+}
+
+
+/****************
+** Media quary **
+*****************/
+@media (max-width: 900px) {
+    .container,
+    .pagination,
+    .title-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 785px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    * {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .title-wrapper {
+        text-align: center;
+    }
+
+    .title-wrapper .title {
+        font-size: 28px !important;
+    }
+
+    h1 {
+        font-size: 24px !important;
+    }
+
+    .line {
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .container {
+        margin: 0 auto;
+        border: none;
+    }
+
+    .container .wrapper {
+        flex-direction: column;
+    }
+
+    .pagination .wrapper {
+        padding: 20px 40px;
+    }
+}

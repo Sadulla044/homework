@@ -1,0 +1,230 @@
+/***************
+** Core style **
+***************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/**********
+** Title **
+**********/
+.title-wrapper {
+    max-width: 1100px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.title-wrapper .title {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+/***************
+** Main style **
+***************/
+.container {
+    max-width: 1100px;
+    width: 1100px;
+    height: auto;
+    margin: 80px auto;
+    margin-bottom: 50px !important;
+    border: 1px solid black;
+}
+
+.container .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.to-red {
+    color: red;
+}
+
+.line {
+    height: auto;
+    border: 0.5px solid black;
+}
+
+
+/*************************
+** Unordered list style **
+*************************/
+.unordered-list .title {
+    margin-bottom: 20px;
+}
+
+.list-wrapper > div {
+    margin-bottom: 20px;
+}
+
+.list-wrapper > div:last-child {
+    margin-bottom: 0;
+}
+
+.list-wrapper > div ul > li {
+    margin-left: 40px;
+}
+
+.disc-list .disc > li {
+    list-style: disc;
+}
+
+.square-list .square > li {
+    list-style: square;
+}
+
+.circle-list .circle > li {
+    list-style: circle;
+}
+
+
+/***********************
+** Ordered list style **
+***********************/
+.ordered-list .title {
+    margin-bottom: 20px;
+}
+
+.list-wrapper > div {
+    margin-bottom: 20px;
+}
+
+.list-wrapper > div:last-child {
+    margin-bottom: 0;
+}
+
+.list-wrapper > div ol > li {
+    margin-left: 40px;
+}
+
+.decimal-list .decimal > li {
+    list-style: decimal;
+}
+
+.zero-decimal-list .zero-decimal > li {
+    list-style: decimal-leading-zero;
+}
+
+.acii-list .acii > li {
+    list-style: lower-alpha;
+}
+
+.roman-list .roman > li {
+    list-style: lower-roman;
+}
+
+
+/***************
+** Pagination **
+***************/
+.pagination {
+    position: relative;
+    max-width: 1100px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.pagination .wrapper,
+.link {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.pagination .wrapper > a,
+.pagination .wrapper > div {
+    margin-right: 10px;
+}
+
+.pagination .wrapper:last-child {
+    margin-right: 0;
+}
+
+.pagination .page {
+    display: inline-block;
+}
+
+.pagination .page .page-title {
+    font-weight: 300;
+}
+
+.icon {
+    cursor: pointer;
+    width: 1.2rem;
+}
+
+
+/****************
+** Media quary **
+*****************/
+@media (max-width: 1100px) {
+    .container,
+    .pagination,
+    .title-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 785px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    * {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .title-wrapper {
+        text-align: center;
+    }
+
+    .title-wrapper .title {
+        font-size: 28px !important;
+    }
+
+    h1 {
+        font-size: 24px !important;
+    }
+
+    .line {
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .container {
+        margin: 0 auto;
+        border: none;
+    }
+
+    .container .wrapper {
+        flex-direction: column;
+    }
+
+    .pagination .wrapper {
+        padding: 20px 40px;
+    }
+}
