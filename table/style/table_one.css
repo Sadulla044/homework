@@ -1,0 +1,32 @@
+:root {
+    --table-width: 800px;
+    --table-height: 300px;
+    --table-data-width: calc(var(--border-width) / 4);
+}
+
+.section__one .title {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.first-table {
+    width: var(--table-width);
+    height: var(--table-height);
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.first-table th,
+.first-table td {
+    width: var(--table-data-width);
+    border: 1px solid black;
+}
+
+.first-table td {
+    padding-left: 5px;
+}
+
+.section__one .double {
+    height: 2rem;
+}

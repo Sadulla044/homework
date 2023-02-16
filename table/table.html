@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/table_one.css" />
+    <link rel="stylesheet" href="style/table_two.css" />
+    <link rel="stylesheet" href="style/table_three.css" />
+    <link rel="stylesheet" href="style/table_four.css" />
+    <title>Table</title>
+  </head>
+
+  <body>
+    <section class="section__one section">
+      <h3 class="title">Invoice</h3>
+      <table class="first-table">
+        <tr class="table-row">
+          <th class="table-head">Item / Desc.</th>
+          <th class="table-head">Qty.</th>
+          <th class="table-head">@</th>
+          <th class="table-head">Price</th>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data">Paperclips (Box)</td>
+          <td class="table-data">100</td>
+          <td class="table-data">1.15</td>
+          <td class="table-data">115.00</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data">Paper (Case)</td>
+          <td class="table-data">10</td>
+          <td class="table-data">45.99</td>
+          <td class="table-data">459.90</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data double" rowspan="2">Wastepaper Baskets</td>
+          <td class="table-data double" rowspan="2">2</td>
+          <td class="table-data double" rowspan="2">17.99</td>
+          <td class="table-data double" rowspan="2">35.98</td>
+        </tr>
+        <tr class="table-row"></tr>
+        <tr class="table-row">
+          <td class="table-data" colspan="3">Subtotal</td>
+          <td class="table-data">610.88</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data" colspan="2">Tax</td>
+          <td class="table-data">7%</td>
+          <td class="table-data">42.76</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data" colspan="3">total</td>
+          <td class="table-data">653.64</td>
+        </tr>
+      </table>
+    </section>
+    <section class="section__two section">
+      <h3 class="title">Second table</h3>
+      <table class="second-table">
+        <tr class="table-row">
+          <th class="table-head" rowspan="2">Heading</th>
+          <th class="table-head">students</th>
+          <th class="table-head" colspan="3">Details</th>
+        </tr>
+        <tr class="table-row">
+          <th class="table-head">Id</th>
+          <th class="table-head">Name</th>
+          <th class="table-head">Department</th>
+          <th class="table-head">Roll Number</th>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data" rowspan="4">Student List</td>
+          <td class="table-data">1</td>
+          <td class="table-data">Victor</td>
+          <td class="table-data">Computer Science</td>
+          <td class="table-data">12345</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data">2</td>
+          <td class="table-data">Williams</td>
+          <td class="table-data">Electornics</td>
+          <td class="table-data">23456</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data">3</td>
+          <td class="table-data">Harry</td>
+          <td class="table-data">Electrical</td>
+          <td class="table-data">34567</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data">4</td>
+          <td class="table-data">Rick</td>
+          <td class="table-data">Civil</td>
+          <td class="table-data">45678</td>
+        </tr>
+      </table>
+    </section>
+    <section class="section__three section" id="section-three">
+      <h3 class="title">Third table</h3>
+      <table class="third-table">
+        <tr class="table-row">
+          <th class="table-head" rowspan="3">Day</th>
+          <th class="table-head" colspan="5">Seminar</th>
+        </tr>
+        <tr class="table-row">
+          <th class="table-head" colspan="2">Schedule</th>
+          <th class="table-head" colspan="2" rowspan="2">Topic</th>
+        </tr>
+        <tr class="table-row">
+          <th class="table-head">Begin</th>
+          <th class="table-head">End</th>
+        </tr>
+        <tr class="table-row">
+          <td class="table-head" rowspan="2">Monday</td>
+          <td class="table-data" rowspan="2">8:00 a.m.</td>
+          <td class="table-data" rowspan="2">5:00 p.m.</td>
+          <td class="table-data" colspan="2">Introduction to XML</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data" colspan="2">Validity: DTD and Relax NG</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data" rowspan="3">Tuesday</td>
+          <td class="table-data">8:00 a.m.</td>
+          <td class="table-data">11:00 p.m.</td>
+          <td class="table-data devide" colspan="2" rowspan="2">XPath</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data">11:00 a.m.</td>
+          <td class="table-data">2:00 p.m.</td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data">2:00 p.m.</td>
+          <td class="table-data">5:00 p.m.</td>
+          <td class="table-data devide to-top" colspan="2">
+            XSL Transformations
+          </td>
+        </tr>
+        <tr class="table-row">
+          <td class="table-data">Wednesday</td>
+          <td class="table-data">8:00 a.m.</td>
+          <td class="table-data">12:00 p.m.</td>
+          <td class="table-data" colspan="2">XSL Formatting Objects</td>
+        </tr>
+      </table>
+    </section>
+    <section class="section__four section">Section Four</section>
+  </body>
+</html>

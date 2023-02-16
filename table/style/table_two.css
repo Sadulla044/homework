@@ -1,0 +1,27 @@
+:root {
+    --table-width: 800px;
+    --table-height: 300px;
+    --table-data-width: calc(var(--table-width) / 5);
+}
+
+.section__two .title {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.second-table {
+    width: var(--table-width);
+    height: var(--table-height);
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.second-table th,
+.second-table td {
+    width: var(--table-data-width);
+    border: 1px solid black;
+}
+
+.second-table td {
+    padding-left: 5px;
+}

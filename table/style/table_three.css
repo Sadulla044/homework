@@ -1,0 +1,37 @@
+:root {
+    --table-width: 800px;
+    --table-height: 300px;
+    --table-data-width: calc(var(--table-width) / 6);
+}
+
+.section__three .title {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.third-table {
+    width: var(--table-width);
+    height: var(--table-height);
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.third-table th,
+.third-table td {
+    border: 1px solid black;
+}
+
+.third-table td {
+    padding-left: 5px;
+}
+
+.third-table .devide {
+    height: calc(30.4px * 1.5);
+    padding: 10px;
+    width: calc(176px * 2 + 1px);
+    position: absolute;
+}
+
+.third-table .to-top {
+    margin-top: -16px;
+}
