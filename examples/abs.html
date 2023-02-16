@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>abs</title>
 
     <style>
-        :root {
-            --font-size: 24px;
-        }
+      :root {
+        --font-size: 24px;
+      }
 
-        h1 {
-            font-size: abs();
-            font-size: abs(var(--font-size));
-        }
+      h1 {
+        font-size: abs();
+        font-size: abs(var(--font-size));
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <!--
         Positive variables:
         The abs() function can be used to ensure that a value is always positive. 
         In the following example a CSS custom property --font-size is used as the value of font-size.
         Wrapping this custom property in abs() will convert a negative value to a positive one.
     -->
-    <h1>
-        test
-    </h1>
-</body>
+    <h1>test</h1>
+  </body>
 </html>
