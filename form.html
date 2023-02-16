@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="title-wrapper">
+      <h2 class="title">форма заявки на работу в зоопарке</h2>
+      <p class="description">
+        Пожалуйста заполните форму. Обязамельные поля помечены
+        <span class="to-red">*</span>
+      </p>
+    </div>
+    <div class="conatiner">
+      <form action="" class="form">
+        <div class="first-block block">
+          <fieldset class="fieldset">
+            <legend>Form</legend>
+            <div class="name">
+              <label for="name" class="name">
+                Имя
+                <span class="to-red">*</span>
+              </label>
+              <input type="text" id="name" />
+            </div>
+            <div class="tel">
+              <label for="tel" class="tel"> Телефон </label>
+              <input type="tel" id="tel" />
+            </div>
+            <div class="email">
+              <label for="email" class="email">
+                Email
+                <span class="to-red">*</span>
+              </label>
+              <input type="email" id="email" />
+            </div>
+          </fieldset>
+        </div>
+        <div class="second-block block">
+          <fieldset class="fieldset">
+            <legend>Form</legend>
+            <div class="age">
+              <label for="age" class="age">
+                Возраст
+                <span class="to-red">*</span>
+              </label>
+              <input type="number" id="age" />
+            </div>
+            <div class="gender">
+              <label for="gender">Пол</label>
+              <select name="gender" id="gender">
+                <option value="female">Женский</option>
+                <option value="male">Мужской</option>
+              </select>
+            </div>
+            <div class="textarea">
+              <label for="textarea">Перечистите личные качества</label>
+              <textarea name="textarea" id="textarea" cols="30" rows="10">
+              </textarea>
+            </div>
+          </fieldset>
+        </div>
+        <div class="third-block block">
+          <fieldset class="fieldset">
+            <legend>Form</legend>
+            <div class="animals">
+              <div class="zebra">
+                <input type="checkbox" name="zebra" id="zebra">
+                <label for="zebra">Зебра</label>
+              </div>
+              <div class="zebra">
+                <input type="checkbox" name="zebra" id="zebra">
+                <label for="zebra">Зебра</label>
+              </div>
+              <div class="zebra">
+                <input type="checkbox" name="zebra" id="zebra">
+                <label for="zebra">Зебра</label>
+              </div>
+              <div class="zebra">
+                <input type="checkbox" name="zebra" id="zebra">
+                <label for="zebra">Зебра</label>
+              </div>
+              <div class="zebra">
+                <input type="checkbox" name="zebra" id="zebra">
+                <label for="zebra">Зебра</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
