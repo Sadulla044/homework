@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&family=Roboto:wght@300;500;700&display=swap');
+
+/* Core style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .clear-fix {
+    clear: both;
+} */
+
+/* Main style */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.container .form {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 750px;
+    height: 600px;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.form .left {
+    position: relative;
+    float: left;
+    width: 60%;
+}
+
+.left .logo {
+    margin-bottom: 10px;
+}
+
+.left .title .title-txt {
+    margin-bottom: 10px;
+    font-family: 'roboto' sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.left .title .description {
+    font-family: 'roboto' sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.left .signup-form .name {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.signup-form .name > span {
+    width: 170px;
+    height: 2.2rem;
+    margin-right: 7px;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+}
+
+.signup-form .name > span:last-child {
+    margin-right: 0;
+}
+
+.signup-form .name .first-name input,
+.signup-form .name .last-name input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+}
+
+.signup-form .name .first-name input::placeholder,
+.signup-form .name .last-name input::placeholder {
+    padding-left: 15px;
+}
+
+.left .signup-form .email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: calc(170px * 2 + 7px);
+    height: 2.2rem;
+    margin-top: 25px;
+    border: 1px solid #dcdee2;
+}
+
+.signup-form .email-rule {
+    padding: 10px;
+    margin-top: 5px;
+    font-family: 'roboto' sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #5f6368;
+}
+
+.signup-form .email input {
+    width: 70%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+.signup-form .email .email-span {
+    width: 30%;
+    margin-right: 15px;
+    font-family: 'roboto' sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.left .signup-form .password-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.signup-form .password-wrapper > span {
+    width: 170px;
+    height: 2.2rem;
+    margin-right: 7px;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+}
+
+.signup-form .password-wrapper > span:last-child {
+    margin-right: 0;
+}
+
+.signup-form .password-wrapper .password input,
+.signup-form .password-wrapper .confirm input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+}
+
+.signup-form .name .first-name input::placeholder,
+.signup-form .name .last-name input::placeholder {
+    padding-left: 15px;
+}
+
+.signup-form .password-rule {
+    display: flex;
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: 'roboto' sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #5f6368;
+}
+
+.signup-form .show-password {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.checkbox-wrapper-39 *,
+    .checkbox-wrapper-39 *::before,
+    .checkbox-wrapper-39 *::after {
+      box-sizing: border-box;
+    }
+  
+    .checkbox-wrapper-39 label {
+      display: block;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  
+    .checkbox-wrapper-39 input {
+      visibility: hidden;
+      display: none;
+    }
+  
+    .checkbox-wrapper-39 input:checked ~ .checkbox {
+     transform: rotate(45deg);
+     width: 14px;
+     margin-left: 12px;
+     border-color: #1a73e8;
+     border-top-color: transparent;
+     border-left-color: transparent;
+     border-radius: 0;
+    }
+  
+    .checkbox-wrapper-39 .checkbox {
+      display: block;
+      width: inherit;
+      height: inherit;
+      border: 1px solid #434343;
+      border-radius: 6px;
+      transition: all 0.375s;
+    }
+
+.signup-form .show-password label {
+    font-family: 'roboto' sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.signup-form .next {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 87%;
+    margin-top: 70px;
+}
+
+.signup-form .next .sign-in a {
+    font-family: 'roboto' sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.signup-form .next .next-btn {
+    width: 80px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: #1a73e8;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form .right {
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+.form .right .icon {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.form .right .description {
+    margin-bottom: 60px;
+}
+
+.form .right .description-txt {
+    text-align: center;
+    font-family: 'roboto' sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
